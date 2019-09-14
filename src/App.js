@@ -4,6 +4,7 @@ import './App.css';
 import CharacterCard from './CharacterCard'
 import _ from 'lodash';
 
+
 let message = "HELLO"
 const prepareStateFromWord = (given_word) => {
   let word = given_word.toUpperCase()
@@ -24,6 +25,7 @@ class App extends React.Component {
     this.setState({ guess:[],completed: false })
     this.setState({ ans: ""})
     this.setState({ reset: ""})
+   
     
   }
 
