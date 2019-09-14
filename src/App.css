@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+
 .App {
   text-align: center;
   color: blue;
@@ -5,6 +11,7 @@
 }
 
 .card{
+  font-family: 'Saira Stencil One', cursive;
   display: inline-block;
   text-align: center;
   width: 3em;
@@ -20,7 +27,29 @@
   text-align: center;
  }
  
- h1{
-  text-align: center;
+ h2{
+  font-family: 'Acme', sans-serif;
   color:rgb(0, 0, 0);
+  font-size: 50px;
+ }
+
+ .Righteous{
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+ }
+
+ .Righteous2{
+  font-family: 'Righteous', cursive;
+  font-size: 60px;
+  text-align: center;
+ }
+ 
+ button{
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+  text-align: center;
+  background:white;
+  display: inline-block;
+  user-select: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
  }
