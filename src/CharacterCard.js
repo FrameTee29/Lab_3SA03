@@ -8,11 +8,14 @@ export default class CharacterCard extends React.Component {
             active: false,
         }
     }
+    
 
     activate = () => {
-        if (!this.state.active) {
-            this.setState({ active: true})
-        }
+        this.setState({
+            active: !this.state.active
+        });
+
+        this.props.activationHandler(this.props.value)
     }
     render() {
         let activeClass=this.state.active ? 'activeCard' : '';
