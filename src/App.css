@@ -3,7 +3,16 @@
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
+body{
+  background: rgba(238, 255, 0, 0.74);
+}
+.Backgrounf{
+  background: rgba(204, 10, 10, 0.932);
+  color: aliceblue;
+  display:inline-block;
+  box-shadow: 0 4px 8px 0 rgb(255, 154, 4);
 
+}
 .App {
   text-align: center;
   color: blue;
@@ -16,20 +25,23 @@
   text-align: center;
   width: 3em;
   font-size: 3em;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
   margin: 1em;
   user-select: none;
+  align-items: center;
+  color:rgb(255, 255, 255);
 }
 
 .activeCard {
-  color:rgb(0, 0, 0);
-  background: rgb(58, 255, 8);
+  color:rgb(240, 240, 240);
+  background: rgb(255, 81, 0);
   text-align: center;
+  align-items: center;
  }
  
  h2{
   font-family: 'Acme', sans-serif;
-  color:rgb(0, 0, 0);
+  color: aliceblue;
   font-size: 50px;
   text-align: center;
  }
@@ -41,6 +53,11 @@
  }
 
  .Righteous2{
+  font-family: 'Righteous', cursive;
+  font-size: 60px;
+  text-align: center;
+ }
+ .R2{
   font-family: 'Righteous', cursive;
   font-size: 60px;
   text-align: center;
@@ -58,4 +75,6 @@
  div{
   align-items: center;
   flex-direction: column;
+  text-align: center;
  }
+

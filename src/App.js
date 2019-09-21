@@ -38,7 +38,7 @@ class App extends React.Component {
   }
 
   reset = () => {
-    this.setState({ completed: false ,check: this.state.check + 1,})
+    this.setState({ completed: false ,attempt: this.state.attempt + 1,})
   }
 
   render() {
@@ -46,13 +46,16 @@ class App extends React.Component {
     let Com= this.state.completed === true ? <h2 class="Righteous2">Complete </h2>: '';
     let resetevery= this.state.completed === true ? <button onClick={this.reset}><h1>Play Again</h1></button>: '';    
     return (
-      <div>
+     <div><h1 class="R2">Find the world</h1>
+      <div className="Backgrounf">
+        
         {Array.from(this.state.chars).map((item, index) => <CharacterCard value={item} key={index}  attempt={this.state.attempt} activationHandler={this.activationHandler} />)}
 
         <h2>Selected :</h2>
         <div class="Righteous2">{this.state.guess}</div>
         <div class="Righteous">Attemp {this.state.attempt}</div>
-        <div>{Com},{resetevery},</div>
+        <div >{Com}{resetevery}</div>
+      </div>
       </div>
     );
   }
