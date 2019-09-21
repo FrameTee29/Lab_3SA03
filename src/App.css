@@ -31,11 +31,13 @@
   font-family: 'Acme', sans-serif;
   color:rgb(0, 0, 0);
   font-size: 50px;
+  text-align: center;
  }
 
  .Righteous{
   font-family: 'Righteous', cursive;
   font-size: 30px;
+  text-align: center;
  }
 
  .Righteous2{
@@ -52,4 +54,8 @@
   display: inline-block;
   user-select: none;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ }
+ div{
+  align-items: center;
+  flex-direction: column;
  }

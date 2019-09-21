@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-
+import App from './App.js'
 
 export default class CharacterCard extends React.Component {
     constructor(props) {
@@ -10,12 +10,17 @@ export default class CharacterCard extends React.Component {
         }
     }
 
-
-
+    componentDidUpdate(prevProps){
+        if(prevProps.attempt != this.props.attempt){
+        this.setState({active: false})
+        }
+       }
     activate = () => {
+        
         if (this.state.active == false) {
             this.setState({ active: !this.state.active });
             this.props.activationHandler(this.props.value)
+            console.log('...');
         }
     }
     render() {
@@ -23,9 +28,11 @@ export default class CharacterCard extends React.Component {
         let className = `card ${activeClass}`
         return (
             <div className={className} onClick={this.activate}>
-                {this.props.value}
+                {this.props.value}                
             </div>
-        )
+            
+        );
 
     }
 }
+
